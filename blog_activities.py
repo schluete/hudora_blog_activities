@@ -38,7 +38,7 @@ def was_tweeted_before(text):
         cur = conn.cursor()
         cur.execute("""create table if not exists tweets(
                        text varchar primary key not null, created_at timestamp);""")
-        cur.execute("insert into tweets values('%s',date('now'));" % text.replace("'", '"'))
+        cur.execute("insert into tweets values('%s',datetime('now'));" % text.replace("'", '"'))
         conn.commit()
         return False
     except:
