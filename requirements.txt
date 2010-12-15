@@ -1,0 +1,2 @@
+gdata
+--editable git+ssh://git@github.com/hudora/CentralServices#egg=cs
