@@ -6,7 +6,6 @@ import os
 import gdata.sites.client
 import gdata.sites.data
 import sqlite3
-from httplib2 import Http
 from cs.zwitscher import zwitscher
 
 
